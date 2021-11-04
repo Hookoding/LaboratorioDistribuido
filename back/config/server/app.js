@@ -7,6 +7,8 @@ const app = express();
 app.set('port', process.env.PORT || 4000);
 
 //Middlewares
+const cors = require('cors');
+app.use(cors());
 app.use(express.json());
 
 //Rutas
